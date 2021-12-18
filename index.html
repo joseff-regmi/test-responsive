@@ -38,16 +38,19 @@
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="hero_section">
-        <div class="illustration_img">
-          <img
-            class="image_primary"
-            id="illustration_img_id"
-            src="images/illustration_img.svg"
-            alt="illustration_img"
-          />
-        </div>
-        <div class="virtual_health_care">
+      <section class="hero_section clearfix">
+        <img
+          class="image_primary float_right"
+          id="illustration_img_id"
+          src="images/illustration_img.svg"
+          alt="illustration_img"
+        />
+        <img
+          id="vector_img_top_id"
+          src="images/vector_group.svg"
+          alt="vectror_img"
+        />
+        <div class="virtual_health_care float_left">
           <h1>Virtual Healthcare for you</h1>
           <p class="paragraph_primary">
             Trafalgar provides progressive, and affordable healthcare,
@@ -71,6 +74,7 @@
           </p>
         </div>
         <div class="service_section_down">
+          <!-- Searc doctor -->
           <div class="services">
             <img
               class="service_icons"
@@ -83,6 +87,7 @@
               trusted hospitals
             </p>
           </div>
+          <!-- Online pharmacy -->
           <div class="services">
             <img
               class="service_icons"
@@ -95,8 +100,10 @@
               delivery system
             </p>
           </div>
+          <!-- Consulation -->
           <div class="services">
             <img
+              id="consul_img_id"
               class="service_icons"
               src="images/consulation.svg"
               alt="consulation_svg"
@@ -107,6 +114,7 @@
               recomendations
             </p>
           </div>
+          <!-- details info -->
           <div class="services">
             <img
               class="service_icons"
@@ -118,6 +126,7 @@
               Free consulation with our trusted doctors and get the best
             </p>
           </div>
+          <!-- Emergency care -->
           <div class="services">
             <img
               class="service_icons"
@@ -130,8 +139,10 @@
               your lovely family
             </p>
           </div>
+          <!-- Tracking -->
           <div class="services">
             <img
+              id="tracking_id"
               class="service_icons"
               src="images/tracking.svg"
               alt="tracking_svg"
@@ -145,19 +156,18 @@
         <div class="btn_container">
           <button class="btn_secondary">Learn more</button>
         </div>
-        <!-- Healthcare section -->
       </section>
-      <!-- Healthcare Section -->
+      <!-- Healthcare section -->
       <section class="healthcare_section">
         <div class="healthcare_image">
           <img
-            class="image_primary"
+            class="image_primary float_left"
             id="healthcare_img_id"
             src="images/healthcare.svg"
             alt="healthcare_svg"
           />
         </div>
-        <div class="healthcare_topic">
+        <div class="healthcare_topic float_right">
           <h2>Lending healthcare providers</h2>
           <hr />
           <p class="paragraph_secondary">
@@ -168,11 +178,14 @@
         </div>
         <button class="btn_secondary">Learn more</button>
       </section>
+      <section class="vector_img">
+        <img src="/images/vector_group_download.svg" alt="" />
+      </section>
       <!-- Download section -->
       <section class="download_section">
         <div>
           <img
-            class="image_primary"
+            class="image_primary float_right"
             class="download_img_id"
             src="images/download.svg"
             alt="download_svg"
@@ -196,10 +209,15 @@
       <section class="testimonials_section">
         <div class="testimonials_container">
           <div class="testimonial_heading">
+            <img
+              id="vector_group_testi_id"
+              src="/images/vector_group_testi.svg"
+              alt="svg"
+            />
             <h2>What our customer are saying</h2>
             <hr class="white_hr" />
           </div>
-          <div class="image_info_and_quote">
+          <div class="image_info_and_quote clearfix">
             <div class="image_and_info">
               <img
                 class="a_person"
@@ -209,7 +227,7 @@
               <h4>Edward Newgate</h4>
               <p class="paragraph_secondary">Founder Circle</p>
             </div>
-            <blockquote>
+            <blockquote class="float_right">
               "Our dedicated patient engagement app and web portal allow you to
               access information instantaneously(no tedeous form long calls or
               administrative hassel) and securely"
@@ -221,9 +239,6 @@
             <img src="images/left_arrow_inactive.svg" alt="left_svg" />
           </button>
           <button class="radio">
-            <img src="images/radio_active.svg" alt="btn_svg" />
-          </button>
-          <button class="radio">
             <img src="images/radio_inactive.svg" alt="btn_svg" />
           </button>
           <button class="radio">
@@ -231,14 +246,25 @@
           </button>
           <button class="radio">
             <img src="images/radio_inactive.svg" alt="btn_svg" />
+          </button>
+          <button class="radio">
+            <img
+              src="images/radio_inactive.svg"
+              class="inactive_arrow"
+              alt="btn_svg"
+            />
           </button>
           <button class="right_arrow">
-            <img src="images/right_arrow_active.svg" alt="right_svg" />
+            <img
+              src="images/right_arrow_active.svg"
+              class="inactive_arrow"
+              alt="right_svg"
+            />
           </button>
         </div>
       </section>
       <!-- Article Section -->
-      <section class="article_section">
+      <section class="article_section clearfix">
         <h2>Check out our latest article</h2>
         <hr />
         <div class="article">
@@ -293,46 +319,50 @@
             /></a>
           </div>
         </div>
-        <button class="btn_secondary">View all</button>
+        <div class="clearfix">
+          <button class="btn_secondary view_all">View all</button>
+        </div>
       </section>
     </main>
     <footer class="clearfix">
-      <div class="right_section_warper float_left">
-        <div class="footer_trafalgar clearfix">
-          <button class="float_left" id="footer_logo">T</button>
-          <h2 class="float_left" id="footer_logo_text">Trafalgar</h2>
-          <p class="paragraph_tertiary float_left" id="footer_p_id">
+      <div class="left_section_warper">
+        <div class="footer_trafalgar">
+          <div class="logo_warper">
+            <button id="footer_logo">T</button>
+            <h2 id="footer_logo_text">Trafalgar</h2>
+          </div>
+          <p class="paragraph_tertiary" id="footer_p_id">
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone
           </p>
         </div>
         <div class="footer_company">
           <h6>Company</h6>
-          <ul>
-            <li>About</li>
-            <li>Testimonials</li>
-            <li>Find a docator</li>
-            <li>Apps</li>
+          <ul class="footer_nav_list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Find a docator</a></li>
+            <li><a href="#">Apps</a></li>
           </ul>
         </div>
       </div>
-      <div class="right_section_warper float_right">
+      <div class="right_section_warper">
         <div class="footer_region">
           <h6>Region</h6>
-          <ul>
-            <li>Indonesia</li>
-            <li>Singapore</li>
-            <li>Hongkong</li>
-            <li>Canada</li>
+          <ul class="footer_nav_list">
+            <li><a href="#">Indonesia</a></li>
+            <li><a href="#">Singapore</a></li>
+            <li><a href="#">Hongkong</a></li>
+            <li><a href="#">Canada</a></li>
           </ul>
         </div>
         <div class="footer_help">
           <h6>Help</h6>
-          <ul>
-            <li>Help Center</li>
-            <li>Contact support</li>
-            <li>Instructions</li>
-            <li>How it works</li>
+          <ul class="footer_nav_list">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact support</a></li>
+            <li><a href="#">Instructions</a></li>
+            <li><a href="#">How it works</a></li>
           </ul>
         </div>
       </div>
